@@ -1,0 +1,671 @@
+body {
+    font-family: 'Nanum Brush Script', cursive;
+}
+
+
+/*Preloader*/
+
+div#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: black url("../img/Loading.gif") no-repeat center center;
+}
+
+.main {
+    background-image: url("../img/placeholderbackground.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: 100% 100%;
+}
+
+.body {
+    max-width: 1431px;
+}
+
+.section {
+    height: 100%;
+    width: 100%;
+}
+
+.headerText {
+    color: white;
+    font-size: 35px;
+    font-weight: lighter;
+    font-family: 'Nanum Brush Script', cursive;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+
+.headerImg {
+    width: 340px;
+    height: 75px;
+}
+
+.preloaderImg {
+    width: 100%;
+    padding: 0 10%;
+}
+
+.preloaderText {
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
+    text-align: left;
+    padding: 0 10%;
+    font-family: 'Nanum Brush Script', cursive;
+}
+
+.paddingBottom {
+    padding-bottom: 100px;
+}
+
+.paddingTop {
+    padding-top: 100px;
+}
+
+.contactImg {
+    width: 620px;
+    height: 94px;
+    margin-bottom: 60px;
+}
+
+.formLabel {
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.formInput {
+    width: 100% !important;
+    font-size: 25px;
+    padding: 5px 0;
+    background: transparent;
+    border: 2px solid #b3b3b3;
+    border-radius: 10px;
+    color: white;
+}
+
+#contactForm {
+    width: 100% !important;
+}
+
+.btnSend {
+    margin-top: 30px;
+}
+
+.btnSend button {
+    background: url("../img/send.png");
+    width: 175px;
+    height: 50px;
+    border: none;
+    background-repeat: no-repeat;
+}
+
+.marginFix {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.paddingFix {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.error {
+    margin-top: 2px;
+    font-size: 17px;
+    color: red;
+    font-weight: 600;
+}
+
+@media (min-width: 1368px) and (max-width: 1600px) {
+    .body {
+        max-width: 1192px;
+    }
+    .headerText {
+        font-size: 30px;
+        padding-bottom: 8px;
+    }
+    .headerImg {
+        width: 283px;
+        height: 62px;
+    }
+    .preloaderText {
+        font-size: 35px;
+        line-height: 1;
+    }
+    .paddingBottom {
+        padding-bottom: 30px;
+    }
+    .paddingTop {
+        padding-top: 30px;
+    }
+    .contactImg {
+        width: 516px;
+        height: 78px;
+        margin-bottom: 20px;
+    }
+    .formLabel {
+        font-size: 21px;
+    }
+    .formInput {
+        font-size: 21px;
+    }
+    .btnSend {
+        margin-top: 25px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1367px) {
+    .body {
+        max-width: 1017px;
+    }
+    .headerText {
+        font-size: 20px;
+        padding-bottom: 7px;
+    }
+    .headerImg {
+        width: 241px;
+        height: 52px;
+    }
+    .preloaderText {
+        font-size: 30px;
+        line-height: 1;
+    }
+    .paddingBottom {
+        padding-bottom: 20px;
+    }
+    .paddingTop {
+        padding-top: 20px;
+    }
+    .contactImg {
+        width: 440px;
+        height: 66px;
+        margin-bottom: 15px;
+    }
+    .formLabel {
+        font-size: 18px;
+    }
+    .formInput {
+        font-size: 18px;
+    }
+    .btnSend {
+        margin-top: 21px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .body {
+        max-width: 895px;
+    }
+    .preloaderText {
+        text-align: center;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 768px) {
+    .body {
+        max-width: 600px;
+    }
+    .preloaderText {
+        text-align: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .body {
+        max-width: 316px;
+    }
+    .headerText {
+        font-size: 25px;
+        font-family: 'Nanum Brush Script', cursive;
+    }
+    .headerImg {
+        width: 205px;
+        height: 45px;
+    }
+    .preloaderImg {
+        width: 300px;
+        padding: 0;
+    }
+    .preloaderText {
+        font-size: 25px;
+        line-height: 1.2;
+        text-align: center;
+        padding: 0 !important;
+    }
+    .contactImg {
+        width: 300px;
+        height: 45px;
+        margin-bottom: 20px;
+    }
+    .formLabel {
+        font-size: 17px;
+        font-family: 'Nanum Brush Script', cursive;
+    }
+    .formInput {
+        font-size: 16px;
+        font-family: 'Nanum Brush Script', cursive;
+    }
+    .btnSend {
+        margin-top: 15px;
+    }
+    .paddingBottom {
+        padding-bottom: 0;
+    }
+    .paddingTop {
+        padding-top: 35px;
+    }
+    .verticalImg {
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+}
+
+/** Futer **/
+
+.homeFooter {
+    padding-bottom: 44px;
+  }
+  
+  .footerInstagramIcon {
+    color: white !important;
+    font-size: 29px;
+  }
+  
+  .footerTextCenter {
+    color: white;
+    font-size: 17px;
+    margin-bottom: 0 !important;
+    text-align: center;
+  }
+  
+  .footerTextCenter a {
+    color: white;
+    font-size: 17px;
+    margin-bottom: 0 !important;
+    text-align: center;
+  }
+  
+  .footerTextEnd {
+    color: white;
+    font-size: 11px;
+    text-align: end;
+    margin-bottom: 0;
+  }
+  
+  .footerTextEnd a {
+    color: white;
+  }
+  
+  .footerPaddingFix {
+    padding: 0 !important;
+  }
+  
+  .footerAboutInstagramIcon {
+    color: black !important;
+    font-size: 29px;
+  }
+  
+  .footerAboutTextCenter {
+    color: black;
+    font-size: 17px;
+    margin-bottom: 0 !important;
+    text-align: center;
+  }
+  
+  .footerAboutTextCenter a {
+    color: black !important;
+    font-size: 17px;
+    margin-bottom: 0 !important;
+  }
+  
+  .footerAboutTextEnd {
+    color: black;
+    font-size: 11px;
+    text-align: end;
+    margin-bottom: 0;
+  }
+  
+  .footerAboutTextEnd a {
+    color: black !important;
+  }
+  
+  .footerPadding {
+    padding-right: 31px;
+    padding-left: 31px;
+  }
+  
+  @media (min-width: 1368px) and (max-width: 1600px) {
+    .footerInstagramIcon {
+      font-size: 24px !important;
+    }
+  
+    .footerTextCenter {
+      font-size: 14px !important;
+    }
+  
+    .footerTextCenter a {
+      font-size: 14px !important;
+    }
+  
+    .footerTextEnd {
+      font-size: 10px !important;
+    }
+  
+    .footerAboutInstagramIcon {
+      font-size: 24px !important;
+    }
+  
+    .footerAboutTextCenter {
+      font-size: 14px !important;
+    }
+  
+    .footerAboutTextCenter a {
+      font-size: 14px !important;
+    }
+  
+    .footerAboutTextEnd {
+      font-size: 10px !important;
+      text-align: center !important;
+    }
+  
+    .footerPadding {
+      padding-right: 26px !important;
+      padding-left: 26px !important;
+    }
+  }
+  
+  @media (min-width: 1200px) and (max-width: 1367px) {
+    .footerInstagramIcon {
+      font-size: 20, 5px !important;
+    }
+  
+    .footerTextCenter {
+      font-size: 12px !important;
+    }
+  
+    .footerTextCenter a {
+      font-size: 12px !important;
+    }
+  
+    .footerTextEnd {
+      font-size: 18.5px !important;
+    }
+  
+    .footerAboutInstagramIcon {
+      font-size: 20.5px !important;
+    }
+  
+    .footerAboutTextCenter {
+      font-size: 12px !important;
+    }
+  
+    .footerAboutTextCenter a {
+      font-size: 12px !important;
+    }
+  
+    .footerAboutTextEnd {
+      font-size: 8.5px !important;
+    }
+  
+    .footerPadding {
+      padding-right: 22px !important;
+      padding-left: 22px !important;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1200px) {
+    .footerInstagramIcon {
+      font-size: 13px !important;
+    }
+  
+    .footerTextCenter {
+      font-size: 10px !important;
+      padding-bottom: 5px !important;
+    }
+  
+    .footerTextCenter a {
+      font-size: 10px !important;
+      padding-bottom: 5px !important;
+    }
+  
+    .footerTextEnd {
+      font-size: 8px !important;
+    }
+  
+    .footerAboutInstagramIcon {
+      font-size: 13 !important;
+    }
+  
+    .footerAboutTextCenter {
+      font-size: 10px !important;
+    }
+  
+    .footerAboutTextCenter a {
+      font-size: 10px !important;
+    }
+  
+    .footerAboutTextEnd {
+      font-size: 8px !important;
+    }
+  
+    .footerPadding {
+      padding-right: 15px !important;
+      padding-left: 15px !important;
+    }
+  }
+  
+  @media (min-width: 576px) and (max-width: 767px) {
+    .footerInstagramIcon {
+      font-size: 13px !important;
+    }
+  
+    .footerTextCenter {
+      font-size: 10px !important;
+      padding-bottom: 5px !important;
+    }
+  
+    .footerTextCenter a {
+      font-size: 10px !important;
+      padding-bottom: 5px !important;
+    }
+  
+    .footerTextEnd {
+      font-size: 8px !important;
+      text-align: center !important;
+    }
+  
+    .footerAboutInstagramIcon {
+      font-size: 10px !important;
+    }
+  
+    .footerAboutTextCenter {
+      font-size: 8px !important;
+    }
+  
+    .footerAboutTextCenter a {
+      font-size: 8px !important;
+    }
+  
+    .footerAboutTextEnd {
+      font-size: 7px !important;
+      text-align: center !important;
+    }
+  
+    .footerPadding {
+      padding-right: 12px !important;
+      padding-left: 12px !important;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .footerInstagramIcon {
+      font-size: 13px !important;
+    }
+  
+    .footerTextCenter {
+      font-size: 10px !important;
+      padding-bottom: 3px !important;
+    }
+  
+    .footerTextCenter a {
+      font-size: 10px !important;
+      padding-bottom: 3px !important;
+    }
+  
+    .footerTextEnd {
+      font-size: 8px !important;
+      text-align: center !important;
+    }
+  
+    .footerAboutInstagramIcon {
+      font-size: 10px !important;
+    }
+  
+    .footerAboutTextCenter {
+      font-size: 8px !important;
+    }
+  
+    .footerAboutTextCenter a {
+      font-size: 8px !important;
+    }
+  
+    .footerAboutTextEnd {
+      font-size: 7px !important;
+      text-align: center !important;
+    }
+  
+    .footerPadding {
+      padding-right: 12px !important;
+      padding-left: 12px !important;
+    }
+  }
+  
+  /*Police and terms */
+  
+  .pptHeader {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .pptHeader2 {
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+  
+  .pptText {
+    color: white;
+    font-size: 17px;
+  }
+  
+  @media (min-width: 1368px) and (max-width: 1600px) {
+    .pptHeader {
+      font-size: 21px;
+      margin-bottom: 13px;
+    }
+  
+    .pptHeader2 {
+      font-size: 19px;
+      margin-bottom: 10px;
+    }
+  
+    .pptText {
+      font-size: 14px;
+    }
+  }
+  
+  @media (min-width: 1200px) and (max-width: 1367px) {
+    .pptHeader {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+  
+    .pptHeader2 {
+      font-size: 16px;
+      margin-bottom: 9px;
+    }
+  
+    .pptText {
+      font-size: 12px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1200px) {
+    .pptHeader {
+      font-size: 12px;
+      margin-bottom: 7px;
+    }
+  
+    .pptHeader2 {
+      font-size: 10px;
+      margin-bottom: 5px;
+    }
+  
+    .pptText {
+      font-size: 9px;
+    }
+  
+    .pptContainer {
+      margin-top: 70px;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (min-width: 576px) and (max-width: 767px) {
+    .pptHeader {
+      font-size: 12px;
+      margin-bottom: 7px;
+    }
+  
+    .pptHeader2 {
+      font-size: 10px;
+      margin-bottom: 5px;
+    }
+  
+    .pptText {
+      font-size: 9px;
+    }
+  
+    .pptContainer {
+      margin-top: 60px;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .pptHeader {
+      font-size: 12px;
+      margin-bottom: 7px;
+    }
+  
+    .pptHeader2 {
+      font-size: 10px;
+      margin-bottom: 5px;
+    }
+  
+    .pptText {
+      font-size: 9px;
+    }
+  
+    .pptContainer {
+      margin-top: 60px;
+      margin-bottom: 20px;
+    }
+  }
+  
